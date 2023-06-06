@@ -21,6 +21,7 @@ public class UsersServiceImpl implements IUsersService {
 
 	@Autowired
 	private BCryptPasswordEncoder passwordEncoder;
+	//metodo para encriptar
 
 	@Override
 	public void insert(Users user) {
@@ -28,7 +29,7 @@ public class UsersServiceImpl implements IUsersService {
 		objUser.setPassword(passwordEncoder.encode(objUser.getPassword()));
 		
 		Role role = new Role();
-		// Se asigna el rol con el que queremos que el usuario se cree
+		// Se asigna el rol por defecto
 		role.setAuthority("ROLE_USER");
 		role = roleRepository.save(role);
 		

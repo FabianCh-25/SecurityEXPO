@@ -27,6 +27,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	private LoginSucessHandler sucessHandler;
 
+	//en configure se ponen permisos para las rutas
 	protected void configure(HttpSecurity http) throws Exception {
 		try {
 			http.authorizeRequests()

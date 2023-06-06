@@ -14,7 +14,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 
 @Entity
-// Si ponemos User, nos dará error, por eso en plural
+// Si se pone User, sale error, por eso en plural USERS
 public class Users {
 
 	@Id

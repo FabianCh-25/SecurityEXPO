@@ -1,17 +1,42 @@
 # Proyecto: demoSecurity by Grupo_06
 
-## Explicación
--Necesitamos los 3 puntos
+## Objetivo
+- Explicar el funcionamiento e importancia de Spring Security además de cpnseguir 3 puntos para la PC2.
 
-## Features
-
+## Anotaciones o.O
+* Se necesita crear la base de datos bd_demo_security.
 * Inicia sesión con usuarios ROLE_ADMIN y ROLE_USER.
-* Registra usuarios y les da el rol ROLE_USER.
+* Registra usuarios por defecto recibe el rol ROLE_USER.
+* Cambiale de Rol en PGADMIN a ROLE_ADMIN
 * Un usuario ROLE_USER puede listar productos.
 * Un usuario ROLE_ADMIN puede listar productos y registrar productos.
 * Cierra sesión.
 
 ## Información adicional
-* Se necesita crear la base de datos bd_demo_security. Los credenciales se deben cambiar el application.properties.
-* Para cambiar el rol a ROLE_ADMIN, se deberá cambiar desde BD.
-* Para cambiar el rol con el que se crea el usuario, cambiar el nombre del rol en UsersServiceImpl.
+* Se agregaron las dependencias de spring security.
+y de thymeleaf
+-------------
+* USUARIO - PASWORD
+usuario1 - usuario1:ROLE_USER
+admin - admin:ROLE_ADMIN
+---------------
+* ▒▒▒▒▒▐▀▀▀█▄▒▒▒▒▒▒▒▒▒
+* ▒▒▒▒█▀─────█▒▒▒▒▒▒▒▒
+* ▒▒▒█────▄─▄─▌▒▒▒▒▒▒▒
+* ▒▒▒▌───██─█▌▌▒▒▒▒▒▒▒
+* ▒▒▒▌───█▌──▌▌▒▒▒▒▒▒▒
+* ▒▒▒▌────────▌▒▒▒▒▒▒▒
+* ▒▒█─────────▐▒▒▒▒▒▒▒
+* ▒▐▌─▐───────▐▄▄▒▒▒▒▒
+* ▒▐▌─▐────────▄▀▀█▒▒▒
+* ▒█──▀▄──▄█▄▀▀▒▒▒▌▀▄▒
+* ▐▌────██▀█░█▄▒▄▄█▀▀▌
+* ▐▌──▌▐───▐░░▐▀░░░░░▌
+* ▐▌──▌────▐░░▐░░░░░░▌
+* ▐───▌────▐░░▐░░░░░░▌
+* ▐───█────▐░░▐░░░░░░▌
+* ▐───█────▐░░▐░░░░░░▌
+* ▐───█─────▀█▐▄▄▄█▀▀▒
+* ▀▄▄─▐───────▄█▒▒▒▒▒▒
+* ▒▒▒▀█───█▄▀▀▀▒▒▒▒▒▒▒
+* ▒▒▒▒▒▀▀▀▒▒▒▒▒▒▒▒▒▒▒▒
